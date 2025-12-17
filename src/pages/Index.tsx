@@ -1,13 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Layout } from "@/components/layout/Layout";
+import { Hero } from "@/components/home/Hero";
+import { FeaturedGuides } from "@/components/home/FeaturedGuides";
+import { TopicCluster } from "@/components/home/TopicCluster";
+import { TrustSignals } from "@/components/home/TrustSignals";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      {/* SEO Meta */}
+      <title>CreditExplained.us - US Credit Score & Personal Finance Education</title>
+      <meta
+        name="description"
+        content="Learn about credit scores, credit reports, and personal finance fundamentals. Authoritative guides written for US consumers."
+      />
+      
+      <Hero />
+      <FeaturedGuides />
+      <TopicCluster />
+      <TrustSignals />
+    </Layout>
   );
 };
 
